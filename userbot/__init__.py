@@ -277,40 +277,40 @@ with bot:
         @tgbot.on(events.NewMessage(pattern='/start'))
         async def handler(event):
             if not event.message.from_id == uid:
-                await event.reply(f'`Merhaba ben` @CeteUserBot`! Ben sahibime (`@{me.username}`) yardımcı olmak için varım, yaani sana yardımcı olamam :/ Ama sen de bir Seden açabilirsin; Kanala bak` @CeteUserBot')
+                await event.reply(f'`JuggerSnot`')
             else:
-                await event.reply(f'`Senin için çalışıyorum :) Seni seviyorum. ❤️`')
+                await event.reply(f'`Senin için çalışıyorum`')
 
         @tgbot.on(events.InlineQuery)  # pylint:disable=E0602
         async def inline_handler(event):
             builder = event.builder
             result = None
             query = event.text
-            if event.query.user_id == uid and query == "@CeteUserBot":
+            if event.query.user_id == uid and query == "@legends_of_telegram":
                 rev_text = query[::-1]
                 buttons = paginate_help(0, moduller, "helpme")
                 result = builder.article(
                     f"Lütfen Sadece .yardım Komutu İle Kullanın",
                     text="{}\nYüklenen Modül Sayısı: {}".format(
-                        "Merhaba! Ben @CeteUserBot kullanıyorum!\n\nhttps://github.com/BristolMyers/CeteUserBot", len(moduller)),
+                        "Merhaba! Ben @legends_of_telegram kullanıyorum!\n\nhttps://github.com/BristolMyers/CeteUserBot", len(moduller)),
                     buttons=buttons,
                     link_preview=False
                 )
             elif query.startswith("tb_btn"):
                 result = builder.article(
-                    "© @CeteUserBot",
-                    text=f"@CeteUserBot ile güçlendirildi",
+                    "© @legends_of_telegram",
+                    text=f"@legends_of_telegram ile güçlendirildi",
                     buttons=[],
                     link_preview=True
                 )
             else:
                 result = builder.article(
-                    "© @CeteUserBot",
-                    text="""@CeteUserBot'u kullanmayı deneyin!
+                    "© @legends_of_telegram",
+                    text="""@legends_of_telegram'ı kullanmayı deneyin!
 Hesabınızı bot'a çevirebilirsiniz ve bunları kullanabilirsiniz. Unutmayın, siz başkasının botunu yönetemezsiniz! Alttaki GitHub adresinden tüm kurulum detayları anlatılmıştır.""",
                     buttons=[
-                        [custom.Button.url("Kanala Katıl", "https://t.me/CeteUserBot"), custom.Button.url(
-                            "Gruba Katıl", "https://t.me/CeteUserBot")],
+                        [custom.Button.url("Kanala Katıl", "https://t.me/legends_of_telegram"), custom.Button.url(
+                            "Gruba Katıl", "https://t.me/legends_of_telegram")],
                         [custom.Button.url(
                             "GitHub", "https://github.com/BristolMyers/CeteUserBot")]
                     ],
@@ -330,7 +330,7 @@ Hesabınızı bot'a çevirebilirsiniz ve bunları kullanabilirsiniz. Unutmayın,
                 # https://t.me/TelethonChat/115200
                 await event.edit(buttons=buttons)
             else:
-                reply_pop_up_alert = "Lütfen kendine bir @CeteUserBot aç, benim mesajlarımı düzenlemeye çalışma!"
+                reply_pop_up_alert = "Lütfen kendine bir @legends_of_telegramt aç, benim mesajlarımı düzenlemeye çalışma!"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
         @tgbot.on(events.callbackquery.CallbackQuery(  # pylint:disable=E0602
@@ -348,7 +348,7 @@ Hesabınızı bot'a çevirebilirsiniz ve bunları kullanabilirsiniz. Unutmayın,
                 # https://t.me/TelethonChat/115200
                 await event.edit(buttons=buttons)
             else:
-                reply_pop_up_alert = "Lütfen kendine bir @CeteUserBot aç, benim mesajlarımı düzenlemeye çalışma!"
+                reply_pop_up_alert = "Lütfen kendine bir @legends_of_telegram aç, benim mesajlarımı düzenlemeye çalışma!"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
         @tgbot.on(events.callbackquery.CallbackQuery(  # pylint:disable=E0602
@@ -370,7 +370,7 @@ Hesabınızı bot'a çevirebilirsiniz ve bunları kullanabilirsiniz. Unutmayın,
                         modul_name)
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
             else:
-                reply_pop_up_alert = "Lütfen kendine bir @CeteUserBot aç, benim mesajlarımı düzenlemeye çalışma!"
+                reply_pop_up_alert = "Lütfen kendine bir @legends_of_telegram aç, benim mesajlarımı düzenlemeye çalışma!"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
     except:
         LOGS.info(
