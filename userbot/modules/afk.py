@@ -63,7 +63,7 @@ async def mention_afk(mention):
         if ISAFK:
             if mention.sender_id not in USERS:
                 if AFKREASON:
-                    await mention.reply(f"Sahibim halen AFK.\
+                    await mention.reply(f"Kullanıcım çevrimdışı.\
                         \nSebep: `{AFKREASON}`")
                 else:
                     await mention.reply(str(choice(AFKSTR)))
@@ -72,7 +72,7 @@ async def mention_afk(mention):
             elif mention.sender_id in USERS:
                 if USERS[mention.sender_id] % randint(2, 4) == 0:
                     if AFKREASON:
-                        await mention.reply(f"Sahibim halen AFK.\
+                        await mention.reply(f"Kullanıcım çevrimdışı.\
                             \nSebep: `{AFKREASON}`")
                     else:
                         await mention.reply(str(choice(AFKSTR)))
