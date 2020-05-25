@@ -12,7 +12,7 @@ from userbot import CMD_HELP, bot
 PENIS_TEMPLATE = """
 _/﹋\_
 (҂`_´)
-<,︻╦╤─ ҉ - - @Asayisl
+<,︻╦╤─ ҉ - - @orospudunya
 _/﹋\_
 """
 
