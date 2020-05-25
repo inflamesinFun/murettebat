@@ -1,6 +1,6 @@
 <div align="center">
-  <img src="https://hizliresim.com/disEbG" width="200" height="200">
-  <h1>Cete UserBot</h1>
+  <img src="https://i.hizliresim.com/OtJ5GY.jpg" width="200" height="200">
+  <h1>JuggerSnot UserBot</h1>
 </div>
 <p align="center">
     Cete UserBot, Telegram kullanmanızı kolaylaştıran bir bottur. Tamamen açık kaynaklı ve ücretsizdir.
