@@ -21,16 +21,16 @@ from userbot.events import register
 
 @register(outgoing=True, pattern="^.çete(?: |$)(.*)")
 async def seden(event):
-    """ .çete komutu için """
+    """ .JuggerSnot komutu için """
     args = event.pattern_match.group(1).lower()
     if args:
         if args in CMD_HELP:
             await event.edit(str(CMD_HELP[args]))
         else:
-            await event.edit("Lütfen bir Çete modülü adı belirtin.")
+            await event.edit("Lütfen bir JuggerSnot modülü adı belirtin.")
     else:
-        await event.edit("Lütfen hangi Çete modülü için yardım istediğinizi belirtin !!\
-            \nKullanım: .Çete <modül adı>")
+        await event.edit("Lütfen hangi JuggerSnot modülü için yardım istediğinizi belirtin !!\
+            \nKullanım: .JuggerSnot <modül adı>")
         string = ""
         for i in CMD_HELP:
             string += "`" + str(i)
