@@ -83,7 +83,7 @@ async def bot_ver(event):
                          "`")
     else:
         await event.edit(
-            "Bu arada Cete seni çok seviyor. ❤"
+            "Bu arada Hades seni çok seviyor. ❤"
         )
 
 
@@ -133,7 +133,7 @@ async def pipcheck(pip):
 @register(outgoing=True, pattern="^.alive$")
 async def amialive(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await e.edit("`Merhaba 💋 CeteUserBot Çalışıyor ✨.`")
+        await e.edit("`JuggerSnot 1.0 çalışıyor....`")
 
 
 CMD_HELP.update(
