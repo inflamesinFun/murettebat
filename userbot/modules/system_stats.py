@@ -83,7 +83,7 @@ async def bot_ver(event):
                          "`")
     else:
         await event.edit(
-            "Bu arada Hades seni çok seviyor. ❤"
+            "Bu arada Hades seni çok seviyor! ❤"
         )
 
 
