@@ -89,7 +89,7 @@ for module_name in ALL_MODULES:
 
 LOGS.info("Botunuz çalışıyor! Herhangi bir sohbete .alive yazarak Test edin."
           " Yardıma ihtiyacınız varsa, Destek grubumuza gelin t.me/CeteUserBot")
-LOGS.info("Bot sürümünüz Cete v1.3")
+LOGS.info("Bot sürümünüz Mürettebat 1.0")
 
 """
 if len(argv) not in (1, 3, 4):
